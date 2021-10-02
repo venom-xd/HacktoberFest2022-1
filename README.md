@@ -4,7 +4,7 @@ Contribute any thing you want to.
 - Templates
 - Small Projects
 
-##How to Contribute?
+### How to Contribute?
 
 1. Fork this Repository
 
