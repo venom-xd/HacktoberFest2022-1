@@ -1,0 +1,27 @@
+// https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
+// Kadane's Algorithm
+// Time Complexity- O(N)
+
+int maxSubarraySum(int a[], int n){
+    int in=0,fi=0,i,s=INT_MIN;
+    for(i=0;i<n;i++)
+    {  
+        if(a[i]<=0&&a[i]>s){  s=a[i]; }
+        
+        in=in+a[i];
+        if(in<0)
+        {
+            in=0;
+        }
+        if(in>fi)
+        {
+            fi=in;
+        }
+    }
+    if(fi>0)
+    {
+        return fi;
+    }
+    else
+    return s;
+}
