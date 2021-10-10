@@ -1,4 +1,7 @@
-S = 'I want that Farm House to be in my name, comprende? Also, I want Chocolates.'
+# Taking the sentence Input
+S = input("Enter Your Sentence Here: ")
+
+
 D = {}
 #SS = S.split()
 for item in S:
